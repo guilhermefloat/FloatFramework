@@ -1,0 +1,77 @@
+@import 'normalize.css';
+@import 'grid.less';
+@import 'styles.less';
+
+//////////
+// GRID //
+//////////
+
+// Specify the number of columns and set column and gutter widths
+@columns: 12;
+@column-width: 80;
+@gutter-width: 0;
+@red: #CCC;
+@tamanho: 960px;
+@centrar: 0 auto;
+
+// Remove the definition below for a pixel-based layout
+@total-width: 100%;
+
+
+////////////
+// LAYOUT //
+////////////
+
+// center the contents
+.container {
+	max-width: @tamanho;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+// header
+header#top {
+	margin-bottom: 1em;
+}
+
+// main column & sidebar
+#maincolumn {
+	.column(9);
+	margin-bottom: 1em;
+}
+#sidebar {
+	.column(3);
+	color: @red;
+}
+
+footer#bottom{
+	overflow: hidden;
+	width: 100%;
+}
+
+#teste1 {
+	min-width: 600px;
+	background-color: yellow;
+}
+
+
+
+@media screen and (max-width: 800px) {
+	#maincolumn, #sidebar {
+		.column(12);
+		margin-bottom: 1em;
+	}
+}
+
+/* iPad [portrait + landscape] */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+	#maincolumn, #sidebar {
+		.column(12);
+		margin-bottom: 1em;
+	}
+}
+
+/* iPhone [portrait + landscape] */
+@media only screen and (max-device-width: 480px) {
+
+}

@@ -1,0 +1,12 @@
+CACHE MANIFEST
+# 2012-01-19:v1
+
+# Todos os ficheiros para serem guardados em cache
+index.html
+css/base.css
+css/grid.css
+css/normalize.css
+css/styles.css
+js/plugins.js
+js/float.js
+/favicon.ico
